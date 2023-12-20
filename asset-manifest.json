@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-hover-cell-app/static/css/main.95f5f748.css",
+    "main.js": "/react-hover-cell-app/static/js/main.28abec44.js",
+    "index.html": "/react-hover-cell-app/index.html",
+    "main.95f5f748.css.map": "/react-hover-cell-app/static/css/main.95f5f748.css.map",
+    "main.28abec44.js.map": "/react-hover-cell-app/static/js/main.28abec44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95f5f748.css",
+    "static/js/main.28abec44.js"
+  ]
+}
