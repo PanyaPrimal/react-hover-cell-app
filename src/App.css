@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #416c97;
+  --secondary-color: #565961;
+  --border-color: #000;
+  --text-color: #ffffff;
+  --background-color: #fff;
+}
+
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  width: max-content;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-color);
+  padding: 2vh 10vw 1vh 10vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 2vi;
+}
+
+.field {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.field.active {
+  opacity: 1;
+}
+
+.chosen-field {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  margin: 1vi 0;
+}
+
+.chosen-field.active {
+  opacity: 1;
+}
+
+.grid {
+  min-width: 40vi;
+  border: solid 1px var(--border-color);
+  background-color: var(--background-color);
+}
+
+.row {
+  display: flex;
+}
+
+.control-panel {
+  display: flex;
+  gap: 2vi;
+}
+
+.select,
+.button {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  max-height: 4vi;
+  min-width: 12vi;
+  border-radius: 4vi;
+  border: solid 1px var(--border-color);
+  font-size: calc(4px + 2vmin);
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: scale 0.2s ease-in-out;
+  scale: 1.1;
+}
+
+.active-cells-list {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.active-cells-list.active {
+  opacity: 1;
+}
+
+.active-cells-list ul {
+  font-size: calc(10px + 1vmin);
+  min-width: max-content;
+  max-height: 38vi;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 2vi;
+  margin-top: 1vi;
+}
+
+.active-cells-list li {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border-radius: 10vi;
+  max-height: 4vi;
+  min-width: 100%;
+}
